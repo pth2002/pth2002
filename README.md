@@ -130,6 +130,22 @@ shipping:  research code with reproducible, scoped claims
   <a href="https://github.com/NoetixAI"><img src="https://img.shields.io/badge/NoetixAI-Organization-15142e?style=for-the-badge&logo=github&logoColor=bd68ff" alt="NoetixAI" /></a>
 </div>
 
+---
+
+## `06 / CONTRIBUTION TRACE`
+
+<p align="center">
+  A small agent traversing the build history—regenerated every day by GitHub Actions.
+</p>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pth2002/pth2002/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pth2002/pth2002/output/github-contribution-grid-snake.svg" />
+    <img alt="Animated contribution trace" src="https://raw.githubusercontent.com/pth2002/pth2002/output/github-contribution-grid-snake.svg" />
+  </picture>
+</div>
+
 <br />
 
 <p align="center">
