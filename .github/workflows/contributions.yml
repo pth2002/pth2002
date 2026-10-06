@@ -1,0 +1,47 @@
+name: Draw contribution card
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/contributions.yml"
+      - "scripts/contributions.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-card
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out the profile repository
+        # actions/checkout v4.2.2, pinned to an immutable commit.
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Set up Python
+        # actions/setup-python v5.3.0, pinned to an immutable commit.
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b
+        with:
+          python-version: "3.12"
+
+      - name: Draw the contribution card
+        run: python scripts/contributions.py --user "${{ github.repository_owner }}" --out dist
+
+      - name: Publish SVGs to the output branch
+        # crazy-max/ghaction-github-pages v4.2.0, pinned to an immutable commit.
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img"
+  aria-label="Taiheng Pan. Post-training for LLMs, reinforcement learning and memory for agents.">
+  <defs>
+    <radialGradient id="g1" cx="78%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#FF7A59" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FF7A59" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#1C2738"/>
+    </pattern>
+    <linearGradient id="scan" x1="0" x2="1">
+      <stop offset="0" stop-color="#FF7A59" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FF7A59" stop-opacity="0.28"/>
+    </linearGradient>
+    <clipPath id="plot"><rect x="740" y="108" width="380" height="220"/></clipPath>
+  </defs>
+  <rect width="1200" height="400" rx="22" fill="#0D1117"/>
+  <rect width="1200" height="400" rx="22" fill="url(#dots)"/>
+  <rect width="1200" height="400" rx="22" fill="url(#g1)"/>
+
+  <text x="64" y="104" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="15" letter-spacing="1.5" fill="#5E6B7D">github.com/pth2002</text>
+  <text x="62" y="178" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="68" font-weight="700" fill="#E6EDF3" letter-spacing="-1">Taiheng Pan</text>
+  <text x="64" y="226" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" fill="#9AA7B8">I help language models learn better,</text>
+  <text x="64" y="256" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" fill="#9AA7B8">and help agents remember what matters.</text>
+  <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="14" font-weight="600">
+    <rect x="64" y="292" width="146" height="34" rx="17" fill="#3A2320"/>
+    <text x="137" y="314" text-anchor="middle" fill="#FF7A59">RL for LLMs</text>
+    <rect x="222" y="292" width="156" height="34" rx="17" fill="#13312F"/>
+    <text x="300" y="314" text-anchor="middle" fill="#3DD6C6">agent memory</text>
+    <rect x="390" y="292" width="200" height="34" rx="17" fill="#162132" stroke="#26344A"/>
+    <text x="490" y="314" text-anchor="middle" fill="#9AA7B8">honest evaluation</text>
+  </g>
+
+  <rect x="716" y="52" width="428" height="296" rx="16" fill="#121A27" stroke="#26344A"/>
+  <text x="742" y="86" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" fill="#9AA7B8">reward  vs  training step</text>
+  <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="12" fill="#9AA7B8">
+    <circle cx="950" cy="82" r="5" fill="#FF7A59"/><text x="961" y="86">new method</text>
+    <circle cx="1052" cy="82" r="5" fill="#3DD6C6"/><text x="1063" y="86">baseline</text>
+  </g>
+  <line x1="742" x2="1118" y1="148" y2="148" stroke="#1C2738" stroke-width="1" stroke-dasharray="3 5"/><line x1="742" x2="1118" y1="198" y2="198" stroke="#1C2738" stroke-width="1" stroke-dasharray="3 5"/><line x1="742" x2="1118" y1="248" y2="248" stroke="#1C2738" stroke-width="1" stroke-dasharray="3 5"/><line x1="742" x2="1118" y1="298" y2="298" stroke="#1C2738" stroke-width="1" stroke-dasharray="3 5"/>
+  <g clip-path="url(#plot)">
+    <polyline points="742.0,306 779.6,284 817.2,258 854.8,236 892.4,220 930.0,208 967.6,200 1005.2,194 1042.8,190 1080.4,187 1118.0,185" fill="none" stroke="#FF7A59" stroke-width="6" stroke-opacity="0.85" stroke-linecap="round" stroke-linejoin="round"
+      stroke-dasharray="560" stroke-dashoffset="560">
+      <animate attributeName="stroke-dashoffset" dur="10s" repeatCount="indefinite" keyTimes="0;0.16;1" values="560;0;0"/>
+      <animate attributeName="points" dur="10s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.60;0.72;1" values="742.0,306 779.6,284 817.2,258 854.8,236 892.4,220 930.0,208 967.6,200 1005.2,194 1042.8,190 1080.4,187 1118.0,185;742.0,306 779.6,284 817.2,258 854.8,236 892.4,220 930.0,208 967.6,200 1005.2,194 1042.8,190 1080.4,187 1118.0,185;742.0,306 779.6,291 817.2,277 854.8,261 892.4,253 930.0,243 967.6,239 1005.2,233 1042.8,232 1080.4,228 1118.0,229;742.0,306 779.6,291 817.2,277 854.8,261 892.4,253 930.0,243 967.6,239 1005.2,233 1042.8,232 1080.4,228 1118.0,229"
+        keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.94;0.99;1" values="1;1;0;0"/>
+    </polyline>
+    <polyline points="742.0,306 779.6,292 817.2,276 854.8,262 892.4,252 930.0,244 967.6,238 1005.2,234 1042.8,231 1080.4,229 1118.0,228" fill="none" stroke="#3DD6C6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+      stroke-dasharray="520" stroke-dashoffset="520">
+      <animate attributeName="stroke-dashoffset" dur="10s" repeatCount="indefinite" keyTimes="0;0.14;1" values="520;0;0"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.94;0.99;1" values="1;1;0;0"/>
+    </polyline>
+    <g opacity="0">
+      <rect x="682" y="108" width="60" height="220" fill="url(#scan)"/>
+      <rect x="740" y="108" width="2.5" height="220" fill="#FF7A59"/>
+      <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+        keyTimes="0;0.38;0.58;1" values="0 0;0 0;380 0;380 0"/>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.37;0.38;0.58;0.60;1" values="0;0;1;1;0;0"/>
+    </g>
+    
+    <g opacity="0">
+      <circle cx="817.2" cy="258" r="11" fill="#0D1117" stroke="#FF7A59" stroke-width="2"/>
+      <text x="817.2" y="262.5" text-anchor="middle" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="12" font-weight="700" fill="#FF7A59">1</text>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="linear"
+        keyTimes="0;0.400;0.420;0.62;0.66;1" values="0;0;1;1;0;0"/>
+    </g>
+    <g opacity="0">
+      <circle cx="892.4" cy="220" r="11" fill="#0D1117" stroke="#FF7A59" stroke-width="2"/>
+      <text x="892.4" y="224.5" text-anchor="middle" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="12" font-weight="700" fill="#FF7A59">2</text>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="linear"
+        keyTimes="0;0.445;0.465;0.62;0.66;1" values="0;0;1;1;0;0"/>
+    </g>
+    <g opacity="0">
+      <circle cx="967.6" cy="200" r="11" fill="#0D1117" stroke="#FF7A59" stroke-width="2"/>
+      <text x="967.6" y="204.5" text-anchor="middle" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="12" font-weight="700" fill="#FF7A59">3</text>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="linear"
+        keyTimes="0;0.490;0.510;0.62;0.66;1" values="0;0;1;1;0;0"/>
+    </g>
+    <g opacity="0">
+      <circle cx="1042.8" cy="190" r="11" fill="#0D1117" stroke="#FF7A59" stroke-width="2"/>
+      <text x="1042.8" y="194.5" text-anchor="middle" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="12" font-weight="700" fill="#FF7A59">4</text>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" calcMode="linear"
+        keyTimes="0;0.535;0.555;0.62;0.66;1" values="0;0;1;1;0;0"/>
+    </g>
+  </g>
+  <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" font-weight="700">
+    <g opacity="0">
+      <rect x="1004" y="156" width="104" height="26" rx="13" fill="#3A2320"/>
+      <text x="1056" y="173" text-anchor="middle" fill="#FF7A59">clean win</text>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.17;0.19;0.58;0.61;1" values="0;0;1;1;0;0"/>
+    </g>
+    <g opacity="0">
+      <rect x="742" y="96" width="196" height="24" rx="12" fill="#3A2320"/>
+      <text x="840" y="112" text-anchor="middle" fill="#FF7A59">probing the harness</text>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.37;0.39;0.60;0.62;1" values="0;0;1;1;0;0"/>
+    </g>
+    <g opacity="0">
+      <rect x="988" y="190" width="120" height="26" rx="13" fill="#13312F"/>
+      <text x="1048" y="207" text-anchor="middle" fill="#3DD6C6">a fair tie</text>
+      <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.72;0.75;0.93;0.96;1" values="0;0;1;1;0;0"/>
+    </g>
+  </g>
+</svg>

@@ -1,153 +1,89 @@
-<div align="center">
-  <img src="./assets/hero.svg" alt="PTH Model Systems Lab — Post-train the model. Engineer the agent." width="100%" />
-</div>
-
-<br />
-
-<div align="center">
-  <a href="https://github.com/pth2002"><img src="https://img.shields.io/badge/LLM_ALGORITHMS-07111f?style=for-the-badge&logo=openai&logoColor=45dcff" alt="LLM Algorithms" /></a>
-  <img src="https://img.shields.io/badge/POST--TRAINING-10152c?style=for-the-badge&logo=pytorch&logoColor=7b91ff" alt="Post-Training" />
-  <img src="https://img.shields.io/badge/AGENT_SYSTEMS-21132e?style=for-the-badge&logo=robotframework&logoColor=d96eff" alt="Agent Systems" />
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
+  <img src="./assets/hero-light.svg" alt="Taiheng Pan. I help language models learn better, and help agents remember what matters." width="100%" />
+</picture>
 
 <p align="center">
-  I work on <b>large-model algorithms and post-training</b>, then carry those ideas into<br />
-  <b>agent systems</b> that can reason, use tools, retrieve context, and operate over long horizons.
+  <a href="https://arxiv.org/abs/2610.02911"><img src="https://img.shields.io/badge/arXiv-2610.02911-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv 2610.02911" /></a>
+  <a href="https://huggingface.co/Purdy0228"><img src="https://img.shields.io/badge/Hugging_Face-Purdy0228-f5b301?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face" /></a>
+  <a href="https://github.com/NoetixAI"><img src="https://img.shields.io/badge/NoetixAI-organization-1f2328?style=for-the-badge&logo=github&logoColor=white" alt="NoetixAI" /></a>
 </p>
+
+<h3 align="center">Hi, I'm Taiheng. I make the best.</h3>
+
+I love the moment a result has to stand up for itself. Reinforcement learning for LLMs, memory for long-running agents, evaluation that holds up under a second look: that is where I spend my days, and everything below ships with code you can run today.
+
+## <img src="./assets/mark-probe.svg" width="26" height="26" alt="" /> Probe the Harness
+
+<a href="https://github.com/pth2002/probe-the-harness"><img src="https://img.shields.io/badge/code-probe--the--harness-0d1117?style=flat-square&logo=github" alt="Code" /></a>
+<a href="https://arxiv.org/abs/2610.02911"><img src="https://img.shields.io/badge/paper-arXiv_2610.02911-b31b1b?style=flat-square" alt="Paper" /></a>
+<a href="https://pypi.org/project/probe-the-harness/"><img src="https://img.shields.io/pypi/v/probe-the-harness?style=flat-square&label=pip%20install%20probe-the-harness" alt="PyPI" /></a>
+
+**My new RL method won every single run. So I went bug hunting.**
+
+Before claiming the win, I audited the training harness and caught four bugs propping it up, each one hiding behind a log that looked perfectly healthy. With all four fixed, the clean sweep became an honest tie. I packaged that hunt into PTH: point it at your verl logs and it runs the same four checks in one command, so the next surprising win in your lab gets the scrutiny it deserves.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/bugs-dark.svg" />
+  <img src="./assets/bugs-light.svg" alt="The four bugs: the Idle Clip, the Lost Seed, the Stuck Batch and the Rogue Normaliser." width="100%" />
+</picture>
+
+Here is the Idle Clip caught in a real run. The clip fraction read a calm 0.000 on every update, while the sampler drifted ten thousand times further from the learner.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pth2002/probe-the-harness/main/assets/signal-dark.svg" />
+  <img src="https://raw.githubusercontent.com/pth2002/probe-the-harness/main/assets/signal-light.svg" alt="Sampler to learner KL grows by four orders of magnitude while the PPO clip fraction stays at zero." width="100%" />
+</picture>
+
+## <img src="./assets/mark-memory.svg" width="26" height="26" alt="" /> ConvMemory
+
+<a href="https://github.com/pth2002/ConvMemory"><img src="https://img.shields.io/badge/code-ConvMemory-0d1117?style=flat-square&logo=github" alt="Code" /></a>
+<a href="https://huggingface.co/Purdy0228/ConvMemory-LoCoMo-MPNet"><img src="https://img.shields.io/badge/checkpoint-Hugging_Face-f5b301?style=flat-square&logo=huggingface&logoColor=white" alt="Checkpoint" /></a>
+<a href="https://pypi.org/project/convmemory/"><img src="https://img.shields.io/pypi/v/convmemory?style=flat-square&label=pip%20install%20convmemory" alt="PyPI" /></a>
+
+**Cross-encoder quality for agent memory, at a fraction of the wait.**
+
+ConvMemory is a 14 MB reranker that slots in between your vector search and your agent. On LoCoMo it beats both BGE cross-encoders on Recall@10 and MRR in 28.6 ms per query, and lands within 2% of mxbai-rerank-large's MRR while running 68 times faster. Plug it into mem0, LangChain or LlamaIndex in about ten lines. And if you are curious how I test my own ideas, the repo includes [the five-seed study](https://github.com/pth2002/ConvMemory/blob/main/docs/posts/i-was-wrong-about-temporal-memory.md) that overturned my first explanation of why it works.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pth2002/ConvMemory/main/docs/assets/pareto-dark.png" />
+  <img src="https://raw.githubusercontent.com/pth2002/ConvMemory/main/docs/assets/pareto-light.png" alt="Retrieval quality against reranking latency on LoCoMo." width="100%" />
+</picture>
+
+## <img src="./assets/mark-built.svg" width="26" height="26" alt="" /> More I've built
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/cards-dark.svg" />
+  <img src="./assets/cards-light.svg" alt="FinPilot: 74 percent preference win rate. Bilingual contract RAG: Chinese Recall@5 up 93 percent." width="100%" />
+</picture>
+
+**[FinPilot](https://github.com/pth2002/FinPilot): a 3B model that talks markets.** I trained Qwen2.5-3B with SFT and then DPO into an assistant for A-share investing, and a GPT-4o judge preferred its answers 74% of the time.
+
+**[BiLegalContract-RAG-Tool](https://github.com/pth2002/BiLegalContract-RAG-Tool): long contracts, two languages, one assistant.** Hybrid retrieval, cross-encoder reranking and a critic-and-reflection loop read contracts in Chinese, English or both. Clause-aware chunking alone lifted Chinese Recall@5 by 93%.
+
+## <img src="./assets/mark-bring.svg" width="26" height="26" alt="" /> What I bring
+
+I treat evaluation as part of the product. Every comparison I run starts by checking the baseline, every claim ships with the code to reproduce it, and when the evidence changes the story, I change the story and say so out loud. That makes my wins a little rarer and a lot harder to argue with.
+
+## <img src="./assets/mark-stack.svg" width="26" height="26" alt="" /> Toolbox
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/toolbox-dark.svg" />
+  <img src="./assets/toolbox-light.svg" alt="My toolbox as a transit map: training, memory, product and research lines, all starting from Python." width="100%" />
+</picture>
 
 <p align="center">
-  <code>model behavior</code> → <code>training signal</code> → <code>evaluation</code> → <code>agent runtime</code>
-</p>
-
----
-
-## `01 / RESEARCH FOCUS`
-
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h3>◈ Model Algorithms</h3>
-      <p>Understanding and improving model behavior through objective design, efficient adaptation, reasoning-oriented methods, and careful algorithmic analysis.</p>
-    </td>
-    <td width="33%" valign="top">
-      <h3>◈ Post-Training</h3>
-      <p>Building data, optimization, alignment, and evaluation pipelines that turn capable base models into reliable task specialists.</p>
-    </td>
-    <td width="33%" valign="top">
-      <h3>◈ Agent Intelligence</h3>
-      <p>Designing agents around planning, tool use, memory, feedback loops, and long-horizon execution—not just a larger prompt.</p>
-    </td>
-  </tr>
-</table>
-
-```text
-BASE MODEL
-    │
-    ├── data + objectives ──> POST-TRAINING ──> behavior + capability
-    │                              │
-    │                              └── evaluation / ablation / iteration
-    │
-    └── reasoning model ────> AGENT RUNTIME ──> tools + memory + environment
-```
-
-> I care about research that survives contact with strong baselines: reproducible evaluations, honest ablations, explicit scope boundaries, and negative results when the mechanism does not hold.
-
----
-
-## `02 / FEATURED SYSTEM`
-
-### [ConvMemory](https://github.com/pth2002/ConvMemory) — learned memory reranking for conversational and agent memory
-
-ConvMemory is a lightweight learned reranker placed between vector search and prompt construction. It explores recall-oriented memory selection, evidence reranking, validity context, and conflict-aware memory editing for long-running agent systems.
-
-```text
-query → vector search → ConvMemory → validity / conflict context → agent
-```
-
-<p>
-  <a href="https://github.com/pth2002/ConvMemory"><img src="https://img.shields.io/badge/SOURCE-ConvMemory-0b172a?style=flat-square&logo=github&logoColor=white" alt="ConvMemory source" /></a>
-  <a href="https://github.com/pth2002/ConvMemory/blob/main/paper/convmemory_report.pdf"><img src="https://img.shields.io/badge/REPORT-PDF-8b2535?style=flat-square&logo=adobeacrobatreader&logoColor=white" alt="Technical report" /></a>
-  <a href="https://huggingface.co/Purdy0228/ConvMemory-LoCoMo-MPNet"><img src="https://img.shields.io/badge/CHECKPOINT-Hugging_Face-3b2f08?style=flat-square&logo=huggingface&logoColor=ffd21e" alt="Hugging Face checkpoint" /></a>
-  <a href="https://github.com/pth2002/ConvMemory/actions"><img src="https://img.shields.io/github/actions/workflow/status/pth2002/ConvMemory/ci.yml?style=flat-square&label=CI" alt="CI status" /></a>
-</p>
-
-```python
-from convmemory import ConvMemory
-
-memory_model = ConvMemory.from_pretrained(
-    "Purdy0228/ConvMemory-LoCoMo-MPNet"
-)
-
-context = memory_model.retrieve(
-    query="What changed since the last session?",
-    memories=memory_candidates,
-    top_k=10,
-)
-```
-
----
-
-## `03 / HOW I BUILD`
-
-| Principle | What it means in practice |
-|---|---|
-| **Algorithm before ornament** | Start from the behavior and failure mode, then choose the smallest mechanism that can change it. |
-| **Evaluation is part of the model** | Treat splits, baselines, ablations, and leakage checks as first-class engineering artifacts. |
-| **Agents need state** | Tools, memory, feedback, and environment interaction are core system components—not prompt decoration. |
-| **Negative results are signal** | If an attribution story fails, keep the engineering value and fix the scientific claim. |
-
----
-
-## `04 / TOOLCHAIN`
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,pytorch&theme=dark" alt="Python and PyTorch" />
-  &nbsp;
-  <a href="https://huggingface.co/Purdy0228"><img height="48" src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" /></a>
-  &nbsp;
-  <img src="https://skillicons.dev/icons?i=git,github,docker,linux&theme=dark" alt="Git, GitHub, Docker and Linux" />
-</div>
-
-<p align="center">
-  <code>PyTorch</code> · <code>Transformers</code> · <code>Sentence Transformers</code> ·
-  <code>NumPy</code> · <code>scikit-learn</code> · <code>Hugging Face</code>
-</p>
-
----
-
-## `05 / CURRENT VECTOR`
-
-```yaml
-primary:   large-model algorithms + post-training
-building:  reasoning and evaluation pipelines
-systems:   tool-using agents with memory and feedback loops
-shipping:  research code with reproducible, scoped claims
-```
-
-<div align="center">
-  <a href="https://github.com/pth2002"><img src="https://img.shields.io/badge/GitHub-pth2002-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://huggingface.co/Purdy0228"><img src="https://img.shields.io/badge/Hugging_Face-Purdy0228-3b2f08?style=for-the-badge&logo=huggingface&logoColor=ffd21e" alt="Hugging Face" /></a>
-  <a href="https://github.com/NoetixAI"><img src="https://img.shields.io/badge/NoetixAI-Organization-15142e?style=for-the-badge&logo=github&logoColor=bd68ff" alt="NoetixAI" /></a>
-</div>
-
----
-
-## `06 / CONTRIBUTION TRACE`
-
-<p align="center">
-  A small agent traversing the build history—regenerated every day by GitHub Actions.
-</p>
-
-<div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pth2002/pth2002/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pth2002/pth2002/output/github-contribution-grid-snake.svg" />
-    <img alt="Animated contribution trace" src="https://raw.githubusercontent.com/pth2002/pth2002/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-icons-dark.svg" />
+    <img src="./assets/stack-icons-light.svg" alt="Python, PyTorch, Hugging Face, FastAPI, TypeScript, React, Vite, PostgreSQL, Docker, Linux, Git, GitHub, GitHub Actions, LaTeX and R" width="100%" />
   </picture>
-</div>
-
-<br />
-
-<p align="center">
-  <code>BUILD → MEASURE → ABLATE → ITERATE</code>
 </p>
+
+## <img src="./assets/mark-year.svg" width="26" height="26" alt="" /> A year of building
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pth2002/pth2002/output/contributions-dark.svg" />
+  <img src="https://raw.githubusercontent.com/pth2002/pth2002/output/contributions-light.svg" alt="A year of contributions, with a snake eating its way through every active day." width="100%" />
+</picture>
+
+<p align="center"><sub>Redrawn every day by GitHub Actions from my contribution calendar.</sub></p>
