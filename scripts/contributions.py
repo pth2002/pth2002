@@ -17,11 +17,11 @@ SANS = "'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif"
 MONO = "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
 THEMES = {
     "dark": dict(panel="#121A27", line="#26344A", text="#E6EDF3", muted="#9AA7B8", faint="#5E6B7D",
-                 accent="#FF7A59", glow="#FF9B7F",
-                 levels=["#1A2333", "#3D2622", "#743726", "#C2563B", "#FF7A59"]),
-    "light": dict(panel="#FFFFFF", line="#E5DED4", text="#1F2328", muted="#57606A", faint="#8C959F",
-                  accent="#E0563A", glow="#F08A6E",
-                  levels=["#F1ECE5", "#FCE1D7", "#F5B29C", "#EA7D60", "#D94E31"]),
+                 accent="#4F8CFF", glow="#85B0FF",
+                 levels=["#1A2333", "#1B3C73", "#2556AB", "#3572E0", "#4F8CFF"]),
+    "light": dict(panel="#FFFFFF", line="#D8DEE4", text="#1F2328", muted="#57606A", faint="#8C959F",
+                  accent="#2563EB", glow="#6D9CF2",
+                  levels=["#EBEEF2", "#D9E6FD", "#A7C5FA", "#5B92F3", "#2563EB"]),
 }
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 

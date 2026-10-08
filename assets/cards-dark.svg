@@ -2,12 +2,12 @@
   aria-label="FinPilot: 74 percent preference win rate. BiLegalContract RAG: Chinese Recall at 5 from 0.17 to 0.32.">
   <rect x="1" y="1" width="582" height="226" rx="16" fill="#121A27" stroke="#26344A"/>
   <text x="32" y="46" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#5E6B7D">FINPILOT</text>
-  <text x="30" y="120" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="72" font-weight="700" fill="#FF7A59" letter-spacing="-2">74%</text>
+  <text x="30" y="120" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="72" font-weight="700" fill="#4F8CFF" letter-spacing="-2">74%</text>
   <text x="32" y="156" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#9AA7B8">preference win rate, GPT-4o as judge</text>
   <text x="32" y="196" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" fill="#5E6B7D">Qwen2.5-3B · SFT, then DPO · A-share assistant</text>
   <g transform="translate(470 114) rotate(-90)">
     <circle r="54" fill="none" stroke="#1C2738" stroke-width="14"/>
-    <circle r="54" fill="none" stroke="#FF7A59" stroke-width="14" stroke-linecap="round"
+    <circle r="54" fill="none" stroke="#4F8CFF" stroke-width="14" stroke-linecap="round"
       stroke-dasharray="0 339.3">
       <animate attributeName="stroke-dasharray" dur="5s" repeatCount="indefinite" keyTimes="0;0.3;0.85;1"
         values="0 339.3;251.1 339.3;251.1 339.3;0 339.3" calcMode="spline"

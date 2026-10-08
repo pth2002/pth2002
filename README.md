@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2610.02911"><img src="https://img.shields.io/badge/arXiv-2610.02911-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv 2610.02911" /></a>
-  <a href="https://huggingface.co/Purdy0228"><img src="https://img.shields.io/badge/Hugging_Face-Purdy0228-f5b301?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face" /></a>
+  <a href="https://huggingface.co/Purdy0228"><img src="https://img.shields.io/badge/Hugging_Face-Purdy0228-FFD21E?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face" /></a>
   <a href="https://github.com/NoetixAI"><img src="https://img.shields.io/badge/NoetixAI-organization-1f2328?style=for-the-badge&logo=github&logoColor=white" alt="NoetixAI" /></a>
 </p>
 
@@ -17,7 +17,7 @@ I love the moment a result has to stand up for itself. Reinforcement learning fo
 
 <a href="https://github.com/pth2002/probe-the-harness"><img src="https://img.shields.io/badge/code-probe--the--harness-0d1117?style=flat-square&logo=github" alt="Code" /></a>
 <a href="https://arxiv.org/abs/2610.02911"><img src="https://img.shields.io/badge/paper-arXiv_2610.02911-b31b1b?style=flat-square" alt="Paper" /></a>
-<a href="https://pypi.org/project/probe-the-harness/"><img src="https://img.shields.io/pypi/v/probe-the-harness?style=flat-square&label=pip%20install%20probe-the-harness" alt="PyPI" /></a>
+<a href="https://pypi.org/project/probe-the-harness/"><img src="https://img.shields.io/pypi/v/probe-the-harness?style=flat-square&color=2563EB&label=pip%20install%20probe-the-harness" alt="PyPI" /></a>
 
 **My new RL method won every single run. So I went bug hunting.**
 
@@ -31,23 +31,23 @@ Before claiming the win, I audited the training harness and caught four bugs pro
 Here is the Idle Clip caught in a real run. The clip fraction read a calm 0.000 on every update, while the sampler drifted ten thousand times further from the learner.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pth2002/probe-the-harness/main/assets/signal-dark.svg" />
-  <img src="https://raw.githubusercontent.com/pth2002/probe-the-harness/main/assets/signal-light.svg" alt="Sampler to learner KL grows by four orders of magnitude while the PPO clip fraction stays at zero." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/signal-dark.svg" />
+  <img src="./assets/signal-light.svg" alt="Sampler to learner KL grows by four orders of magnitude while the PPO clip fraction stays at zero." width="100%" />
 </picture>
 
 ## <img src="./assets/mark-memory.svg" width="26" height="26" alt="" /> ConvMemory
 
 <a href="https://github.com/pth2002/ConvMemory"><img src="https://img.shields.io/badge/code-ConvMemory-0d1117?style=flat-square&logo=github" alt="Code" /></a>
-<a href="https://huggingface.co/Purdy0228/ConvMemory-LoCoMo-MPNet"><img src="https://img.shields.io/badge/checkpoint-Hugging_Face-f5b301?style=flat-square&logo=huggingface&logoColor=white" alt="Checkpoint" /></a>
-<a href="https://pypi.org/project/convmemory/"><img src="https://img.shields.io/pypi/v/convmemory?style=flat-square&label=pip%20install%20convmemory" alt="PyPI" /></a>
+<a href="https://huggingface.co/Purdy0228/ConvMemory-LoCoMo-MPNet"><img src="https://img.shields.io/badge/checkpoint-Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=white" alt="Checkpoint" /></a>
+<a href="https://pypi.org/project/convmemory/"><img src="https://img.shields.io/pypi/v/convmemory?style=flat-square&color=2563EB&label=pip%20install%20convmemory" alt="PyPI" /></a>
 
 **Cross-encoder quality for agent memory, at a fraction of the wait.**
 
 ConvMemory is a 14 MB reranker that slots in between your vector search and your agent. On LoCoMo it beats both BGE cross-encoders on Recall@10 and MRR in 28.6 ms per query, and lands within 2% of mxbai-rerank-large's MRR while running 68 times faster. Plug it into mem0, LangChain or LlamaIndex in about ten lines. And if you are curious how I test my own ideas, the repo includes [the five-seed study](https://github.com/pth2002/ConvMemory/blob/main/docs/posts/i-was-wrong-about-temporal-memory.md) that overturned my first explanation of why it works.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pth2002/ConvMemory/main/docs/assets/pareto-dark.png" />
-  <img src="https://raw.githubusercontent.com/pth2002/ConvMemory/main/docs/assets/pareto-light.png" alt="Retrieval quality against reranking latency on LoCoMo." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/pareto-dark.png" />
+  <img src="./assets/pareto-light.png" alt="Retrieval quality against reranking latency on LoCoMo." width="100%" />
 </picture>
 
 ## <img src="./assets/mark-built.svg" width="26" height="26" alt="" /> More I've built

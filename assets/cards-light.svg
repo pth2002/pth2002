@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1186 230" width="1186" height="230" role="img"
   aria-label="FinPilot: 74 percent preference win rate. BiLegalContract RAG: Chinese Recall at 5 from 0.17 to 0.32.">
-  <rect x="1" y="1" width="582" height="226" rx="16" fill="#FFFFFF" stroke="#E5DED4"/>
+  <rect x="1" y="1" width="582" height="226" rx="16" fill="#FFFFFF" stroke="#D8DEE4"/>
   <text x="32" y="46" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#8C959F">FINPILOT</text>
-  <text x="30" y="120" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="72" font-weight="700" fill="#E0563A" letter-spacing="-2">74%</text>
+  <text x="30" y="120" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="72" font-weight="700" fill="#2563EB" letter-spacing="-2">74%</text>
   <text x="32" y="156" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#57606A">preference win rate, GPT-4o as judge</text>
   <text x="32" y="196" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" fill="#8C959F">Qwen2.5-3B · SFT, then DPO · A-share assistant</text>
   <g transform="translate(470 114) rotate(-90)">
-    <circle r="54" fill="none" stroke="#EFE9E0" stroke-width="14"/>
-    <circle r="54" fill="none" stroke="#E0563A" stroke-width="14" stroke-linecap="round"
+    <circle r="54" fill="none" stroke="#E6EBF1" stroke-width="14"/>
+    <circle r="54" fill="none" stroke="#2563EB" stroke-width="14" stroke-linecap="round"
       stroke-dasharray="0 339.3">
       <animate attributeName="stroke-dasharray" dur="5s" repeatCount="indefinite" keyTimes="0;0.3;0.85;1"
         values="0 339.3;251.1 339.3;251.1 339.3;0 339.3" calcMode="spline"
@@ -16,20 +16,20 @@
   </g>
   <text x="470" y="120" text-anchor="middle" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="15" font-weight="700" fill="#1F2328">win rate</text>
 
-  <rect x="603" y="1" width="582" height="226" rx="16" fill="#FFFFFF" stroke="#E5DED4"/>
+  <rect x="603" y="1" width="582" height="226" rx="16" fill="#FFFFFF" stroke="#D8DEE4"/>
   <text x="634" y="46" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#8C959F">BILINGUAL CONTRACT RAG</text>
   <text x="632" y="120" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="72" font-weight="700" fill="#13968A" letter-spacing="-2">+93%</text>
   <text x="634" y="156" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#57606A">Chinese Recall@5 from clause-aware chunking</text>
   <text x="634" y="196" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" fill="#8C959F">hybrid retrieval · reranking · critic loop</text>
   <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" fill="#57606A">
     <text x="930" y="86">before</text>
-    <rect x="990" y="73" width="150" height="16" rx="8" fill="#EFE9E0"/>
+    <rect x="990" y="73" width="150" height="16" rx="8" fill="#E6EBF1"/>
     <rect x="990" y="73" width="0" height="16" rx="8" fill="#8C959F">
       <animate attributeName="width" dur="5s" repeatCount="indefinite" keyTimes="0;0.25;0.85;1" values="0;80;80;0"/>
     </rect>
     <text x="1148" y="86" fill="#1F2328">0.17</text>
     <text x="930" y="126">after</text>
-    <rect x="990" y="113" width="150" height="16" rx="8" fill="#EFE9E0"/>
+    <rect x="990" y="113" width="150" height="16" rx="8" fill="#E6EBF1"/>
     <rect x="990" y="113" width="0" height="16" rx="8" fill="#13968A">
       <animate attributeName="width" dur="5s" repeatCount="indefinite" keyTimes="0;0.1;0.4;0.85;1" values="0;0;150;150;0"/>
     </rect>
