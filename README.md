@@ -67,15 +67,10 @@ I treat evaluation as part of the product. Every comparison I run starts by chec
 
 ## <img src="./assets/mark-stack.svg" width="26" height="26" alt="" /> Toolbox
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/toolbox-dark.svg" />
-  <img src="./assets/toolbox-light.svg" alt="My toolbox as a transit map: training, memory, product and research lines, all starting from Python." width="100%" />
-</picture>
-
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-icons-dark.svg" />
-    <img src="./assets/stack-icons-light.svg" alt="Python, PyTorch, Hugging Face, FastAPI, TypeScript, React, Vite, PostgreSQL, Docker, Linux, Git, GitHub, GitHub Actions, LaTeX and R" width="100%" />
+    <img src="./assets/stack-icons-light.svg" alt="Python, PyTorch, Hugging Face, FastAPI, TypeScript, React, Vite, PostgreSQL, Docker, Linux, Git, GitHub, GitHub Actions, LaTeX and R" width="624" />
   </picture>
 </p>
 
