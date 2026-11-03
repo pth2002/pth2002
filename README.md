@@ -50,6 +50,18 @@ ConvMemory is a 14 MB reranker that slots in between your vector search and your
   <img src="./assets/pareto-light.png" alt="Retrieval quality against reranking latency on LoCoMo." width="100%" />
 </picture>
 
+## <img src="./assets/mark-repofit.svg" width="26" height="26" alt="" /> repofit
+
+<a href="https://github.com/pth2002/repofit"><img src="https://img.shields.io/badge/code-repofit-0d1117?style=flat-square&logo=github" alt="Code" /></a>
+<a href="https://pypi.org/project/repofit/"><img src="https://img.shields.io/pypi/v/repofit?style=flat-square&color=2563EB&label=pip%20install%20repofit" alt="PyPI" /></a>
+<a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.pth2002/repofit"><img src="https://img.shields.io/badge/MCP_Registry-io.github.pth2002%2Frepofit-1FB5A6?style=flat-square" alt="MCP Registry" /></a>
+
+**Your coding agents already know you. Now they know what to install.**
+
+Every week thousands of repositories pick up stars, and every "tools you should try" list is written for everyone at once. repofit reads the memory files, rules and sessions that Codex, Cursor, Claude Code, Gemini CLI and a dozen other agents keep on your machine, then picks the projects you have not heard of and will actually use. Every pick quotes the moment in your own history that earned it. It runs inside your agent as an MCP server, so there is no API key to set up.
+
+https://github.com/user-attachments/assets/c7ac0bcf-74ed-4a09-9295-b6d06e6d67c1
+
 ## <img src="./assets/mark-built.svg" width="26" height="26" alt="" /> More I've built
 
 <picture>
