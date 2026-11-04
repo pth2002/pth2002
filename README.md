@@ -4,78 +4,22 @@
 </picture>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2610.02911"><img src="https://img.shields.io/badge/arXiv-2610.02911-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv 2610.02911" /></a>
   <a href="https://huggingface.co/Purdy0228"><img src="https://img.shields.io/badge/Hugging_Face-Purdy0228-FFD21E?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face" /></a>
   <a href="https://github.com/NoetixAI"><img src="https://img.shields.io/badge/NoetixAI-organization-1f2328?style=for-the-badge&logo=github&logoColor=white" alt="NoetixAI" /></a>
 </p>
 
 <h3 align="center">Hi, I'm Taiheng. I make the best.</h3>
 
-I love the moment a result has to stand up for itself. Reinforcement learning for LLMs, memory for long-running agents, evaluation that holds up under a second look: that is where I spend my days, and everything below ships with code you can run today.
+I work on reinforcement learning for LLMs, memory for long-running agents, and evaluation that holds up under a second look. Everything below ships with code you can run today.
 
-## <img src="./assets/mark-probe.svg" width="26" height="26" alt="" /> Probe the Harness
+## <img src="./assets/mark-built.svg" width="26" height="26" alt="" /> What I've built
 
-<a href="https://github.com/pth2002/probe-the-harness"><img src="https://img.shields.io/badge/code-probe--the--harness-0d1117?style=flat-square&logo=github" alt="Code" /></a>
-<a href="https://arxiv.org/abs/2610.02911"><img src="https://img.shields.io/badge/paper-arXiv_2610.02911-b31b1b?style=flat-square" alt="Paper" /></a>
-<a href="https://pypi.org/project/probe-the-harness/"><img src="https://img.shields.io/pypi/v/probe-the-harness?style=flat-square&color=2563EB&label=pip%20install%20probe-the-harness" alt="PyPI" /></a>
-
-**My new RL method won every single run. So I went bug hunting.**
-
-Before claiming the win, I audited the training harness and caught four bugs propping it up, each one hiding behind a log that looked perfectly healthy. With all four fixed, the clean sweep became an honest tie. I packaged that hunt into PTH: point it at your verl logs and it runs the same four checks in one command, so the next surprising win in your lab gets the scrutiny it deserves.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/bugs-dark.svg" />
-  <img src="./assets/bugs-light.svg" alt="The four bugs: the Idle Clip, the Lost Seed, the Stuck Batch and the Rogue Normaliser." width="100%" />
-</picture>
-
-Here is the Idle Clip caught in a real run. The clip fraction read a calm 0.000 on every update, while the sampler drifted ten thousand times further from the learner.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/signal-dark.svg" />
-  <img src="./assets/signal-light.svg" alt="Sampler to learner KL grows by four orders of magnitude while the PPO clip fraction stays at zero." width="100%" />
-</picture>
-
-## <img src="./assets/mark-memory.svg" width="26" height="26" alt="" /> ConvMemory
-
-<a href="https://github.com/pth2002/ConvMemory"><img src="https://img.shields.io/badge/code-ConvMemory-0d1117?style=flat-square&logo=github" alt="Code" /></a>
-<a href="https://huggingface.co/Purdy0228/ConvMemory-LoCoMo-MPNet"><img src="https://img.shields.io/badge/checkpoint-Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=white" alt="Checkpoint" /></a>
-<a href="https://pypi.org/project/convmemory/"><img src="https://img.shields.io/pypi/v/convmemory?style=flat-square&color=2563EB&label=pip%20install%20convmemory" alt="PyPI" /></a>
-
-**Cross-encoder quality for agent memory, at a fraction of the wait.**
-
-ConvMemory is a 14 MB reranker that slots in between your vector search and your agent. On LoCoMo it beats both BGE cross-encoders on Recall@10 and MRR in 28.6 ms per query, and lands within 2% of mxbai-rerank-large's MRR while running 68 times faster. Plug it into mem0, LangChain or LlamaIndex in about ten lines. And if you are curious how I test my own ideas, the repo includes [the five-seed study](https://github.com/pth2002/ConvMemory/blob/main/docs/posts/i-was-wrong-about-temporal-memory.md) that overturned my first explanation of why it works.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/pareto-dark.png" />
-  <img src="./assets/pareto-light.png" alt="Retrieval quality against reranking latency on LoCoMo." width="100%" />
-</picture>
-
-## <img src="./assets/mark-repofit.svg" width="26" height="26" alt="" /> repofit
-
-<a href="https://github.com/pth2002/repofit"><img src="https://img.shields.io/badge/code-repofit-0d1117?style=flat-square&logo=github" alt="Code" /></a>
-<a href="https://pypi.org/project/repofit/"><img src="https://img.shields.io/pypi/v/repofit?style=flat-square&color=2563EB&label=pip%20install%20repofit" alt="PyPI" /></a>
-<a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.pth2002/repofit"><img src="https://img.shields.io/badge/MCP_Registry-io.github.pth2002%2Frepofit-1FB5A6?style=flat-square" alt="MCP Registry" /></a>
-
-**Your coding agents already know you. Now they know what to install.**
-
-Every week thousands of repositories pick up stars, and every "tools you should try" list is written for everyone at once. repofit reads the memory files, rules and sessions that Codex, Cursor, Claude Code, Gemini CLI and a dozen other agents keep on your machine, then picks the projects you have not heard of and will actually use. Every pick quotes the moment in your own history that earned it. It runs inside your agent as an MCP server, so there is no API key to set up.
-
-https://github.com/user-attachments/assets/c7ac0bcf-74ed-4a09-9295-b6d06e6d67c1
-
-## <img src="./assets/mark-built.svg" width="26" height="26" alt="" /> More I've built
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/cards-dark.svg" />
-  <img src="./assets/cards-light.svg" alt="FinPilot: 74 percent preference win rate. Bilingual contract RAG: Chinese Recall@5 up 93 percent." width="100%" />
-</picture>
-
-**[FinPilot](https://github.com/pth2002/FinPilot): a 3B model that talks markets.** I trained Qwen2.5-3B with SFT and then DPO into an assistant for A-share investing, and a GPT-4o judge preferred its answers 74% of the time.
-
-**[BiLegalContract-RAG-Tool](https://github.com/pth2002/BiLegalContract-RAG-Tool): long contracts, two languages, one assistant.** Hybrid retrieval, cross-encoder reranking and a critic-and-reflection loop read contracts in Chinese, English or both. Clause-aware chunking alone lifted Chinese Recall@5 by 93%.
-
-## <img src="./assets/mark-bring.svg" width="26" height="26" alt="" /> What I bring
-
-I treat evaluation as part of the product. Every comparison I run starts by checking the baseline, every claim ships with the code to reproduce it, and when the evidence changes the story, I change the story and say so out loud. That makes my wins a little rarer and a lot harder to argue with.
+- **[Probe the Harness](https://github.com/pth2002/probe-the-harness)** <a href="https://arxiv.org/abs/2610.02911"><img src="https://img.shields.io/badge/arXiv-2610.02911-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv 2610.02911" /></a> <a href="https://pypi.org/project/probe-the-harness/"><img src="https://img.shields.io/pypi/v/probe-the-harness?style=flat-square&color=2563EB&logo=pypi&logoColor=white&label=PyPI" alt="PyPI probe-the-harness" /></a><br>My new RL method won every run, so I audited the training harness and found four bugs propping it up. PTH runs the same four checks on your verl logs in one command.
+- **[RL Method Tracker](https://github.com/pth2002/rl-method-tracker)** <a href="https://arxiv.org/abs/2610.28027"><img src="https://img.shields.io/badge/arXiv-2610.28027-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv 2610.28027" /></a> <a href="https://huggingface.co/datasets/Purdy0228/rl-method-tracker"><img src="https://img.shields.io/badge/Hugging_Face-dataset-FFD21E?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face dataset" /></a><br>Which RL post-training methods for language models actually reach open-source training frameworks. Of 1,598 methods on arXiv, 37 reached framework code. The tracker updates every week.
+- **[ConvMemory](https://github.com/pth2002/ConvMemory)** <a href="https://arxiv.org/abs/2605.28062"><img src="https://img.shields.io/badge/arXiv-2605.28062-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv 2605.28062" /></a> <a href="https://huggingface.co/Purdy0228/ConvMemory-LoCoMo-MPNet"><img src="https://img.shields.io/badge/Hugging_Face-checkpoint-FFD21E?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face checkpoint" /></a> <a href="https://pypi.org/project/convmemory/"><img src="https://img.shields.io/pypi/v/convmemory?style=flat-square&color=2563EB&logo=pypi&logoColor=white&label=PyPI" alt="PyPI convmemory" /></a><br>A 14 MB reranker for agent memory. On LoCoMo it beats both BGE cross-encoders and lands within 2% of mxbai-rerank-large's MRR while running 68 times faster.
+- **[repofit](https://github.com/pth2002/repofit)** <a href="https://pypi.org/project/repofit/"><img src="https://img.shields.io/pypi/v/repofit?style=flat-square&color=2563EB&logo=pypi&logoColor=white&label=PyPI" alt="PyPI repofit" /></a> <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.pth2002/repofit"><img src="https://img.shields.io/badge/MCP_Registry-repofit-1FB5A6?style=flat-square" alt="MCP Registry" /></a><br>Reads what your coding agents already know about you and picks the GitHub projects you will actually use. It runs inside your agent as an MCP server, with no API key.
+- **[FinPilot](https://github.com/pth2002/FinPilot)**<br>Qwen2.5-3B trained with SFT and then DPO into an A-share investing assistant. A GPT-4o judge preferred its answers 74% of the time.
+- **[BiLegalContract-RAG-Tool](https://github.com/pth2002/BiLegalContract-RAG-Tool)**<br>A contract assistant for Chinese, English or both. Clause-aware chunking alone lifted Chinese Recall@5 by 93%.
 
 ## <img src="./assets/mark-stack.svg" width="26" height="26" alt="" /> Toolbox
 
